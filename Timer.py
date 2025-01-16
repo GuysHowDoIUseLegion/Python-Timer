@@ -21,17 +21,17 @@ def timer(timeRemaining):
             print("\rHang tight, creating clear module")
             with open("clear.py", "w") as amogus:
                 amogus.write(r'''import os
-    import platform
+import platform
 
-    sys = platform.system()
+sys = platform.system()
 
-    def clear():
-        if sys == "Windows":
-            os.system("cls")
-        elif sys == "Linux":
-            os.system("clear")
-        else:
-            print("The clear function is not supported for %s" % sys)''')
+def clear():
+    if sys == "Windows":
+        os.system("cls")
+    elif sys == "Linux":
+        os.system("clear")
+    else:
+        print("The clear function is not supported for %s" % sys)''')
     
     timeStarted = str(dt.datetime.now()).split(" ")
     
